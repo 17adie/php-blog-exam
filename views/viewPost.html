@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>View Post</h1>
+
+      <div class="pt-5">
+        <h6>Title: <span id="title">t</span></h6>
+        <h6>
+          Content:
+          <p id="content">c</p>
+        </h6>
+      </div>
+
+      <div class="p-4">
+        <h5>Comment</h5>
+        <form id="commentForm" class="row g-3">
+          <div class="col-12">
+            <textarea type="text" class="form-control" id="addComment" rows="2" placeholder="Enter Comment" > </textarea>
+          </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+        <!-- comment section -->
+        <section style="background-color: #d3d3d3;">
+          <div class="container my-5 py-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-12 col-lg-10" id="commentContainer">
+
+                <!-- comments here -->
+                <!-- <div class="card text-dark">
+                  <div class="card-body p-4">
+                    <div class="d-flex flex-start">
+                      <div>
+                        <h6 class="fw-bold mb-1">Anonymous</h6>
+                        <div class="d-flex align-items-center mb-3">
+                          <p class="mb-0">
+                            March 07, 2021
+                          </p>
+                        </div>
+                        <p class="mb-0">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry. Lorem Ipsum has been the industry's standard dummy text ever
+                          since the 1500s, when an unknown printer took a galley of type and
+                          scrambled it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- comment section end -->
+
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../script/viewPost.js"></script>
+  </body>
+</html>
